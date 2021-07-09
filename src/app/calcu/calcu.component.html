@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-4"></div>
+      
+      <div class="col-4">
+        <div class="card bg-dark">
+          <div class="card-header mt-5 pb-5">
+              <div class="row">
+                <div class="col">
+                  <h1>{{answer}}</h1>
+                  
+                </div>
+                <div class="col float-end">
+                  <input type="button" value="c" (click)="clr()"/>
+                </div>
+                 <!-- clr() function will call clr to clear all value -->
+              </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col topr text-center"><input type="button" value="1" (click)="dis('1')"/></div>
+              <div class="col topr text-center"><input type="button" value="2" (click)="dis('2')"/> </div>
+              <div class="col topr text-center"><input type="button" value="3" (click)="dis('3')"/></div>
+              <div class="col topr text-center"><input type="button" value="/" (click)="dis('/')"/></div>
+            </div>
+            <div class="row mt-5 mb-5">
+              <div class="col topr text-center"><input type="button" value="4" (click)="dis('4')"/></div>
+              <div class="col topr text-center"><input type="button" value="5" (click)="dis('5')"/></div>
+              <div class="col topr text-center"><input type="button" value="6" (click)="dis('6')"/></div>
+              <div class="col topr text-center"><input type="button" value="-" (click)="dis('-')"/></div>
+            </div>
+            <div class="row mt-5 mb-5">
+              <div class="col topr text-center"><input type="button" value="7" (click)="dis('7')"/></div>
+              <div class="col topr text-center"><input type="button" value="8" (click)="dis('8')"/></div>
+              <div class="col topr text-center"><input type="button" value="9" (click)="dis('9')"/></div>
+              <div class="col topr text-center"><input type="button" value="+" (click)="dis('+')"/></div>
+            </div>
+            <div class="row mt-5 mb-5">
+              <div class="col topr text-center"><input type="button" value="." (click)="dis('.')"/></div>
+              <div class="col topr text-center"><input type="button" value="0" (click)="dis('0')"/></div>
+              <div class="col topr text-center"><input type="button" value="=" (click)="solve()"/></div>
+              <div class="col topr text-center"><input type="button" value="*" (click)="dis('*')"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
